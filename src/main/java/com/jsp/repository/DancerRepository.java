@@ -2,10 +2,7 @@ package com.jsp.repository;
 
 import com.jsp.entity.Dancer;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class DancerRepository {
     // DB 역할을 할 static final Map -> 나중에는 진짜 DB로 할게요!
@@ -50,7 +47,7 @@ public class DancerRepository {
     }
 
     // 댄서 맵에서 댄서 객체를 삭제하는 기능
-    public void delete(String name) {
+    public static void delete(String name) {
         dancerMap.remove(name);
     }
 
